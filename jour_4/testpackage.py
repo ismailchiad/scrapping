@@ -12,8 +12,8 @@ content = response.content
 soup=BeautifulSoup(content, 'html.parser')
 
 # Trouver la balise img
-image_tags = soup.find_all('img')
-print(image_tags)
+# image_tags = soup.find_all('img')
+# print(image_tags)
 
 # Obtenir l'URL de l'image
 # image_url = img["src"]
@@ -21,8 +21,12 @@ print(image_tags)
 # print("URL de l'image :", image_url)
 
 # Obtenir les URLs de toutes les images
-image_urls = [img["src"] for img in image_tags]
+# image_urls = [img["src"] for img in image_tags]
 
 # Afficher les URLs des images
-for url in image_urls:
-    print("URL de l'image :", url)
+# for url in image_urls:
+#     print("URL de l'image :", url)
+
+# cas de la balise span
+balise_span = soup.find('span')
+print(balise_span)
